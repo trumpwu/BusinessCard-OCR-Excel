@@ -91,18 +91,39 @@ BusinessCard-OCR-Excel/
 
 ## 💡 專案緣起與協作模式 (Concept & Development)
 
-> **「我是概念，你幫我寫。」—— 人機協作（Human-AI Pair Programming）的最佳實踐典範！**
+> **「我是一面工作一面依照需求貢獻，希望有機會幫助到大家；我是概念，你幫我寫。」**
+>
+> *"I build and contribute as real needs arise from my daily work, hoping to help the community. I bring the concepts from the frontline; AI helps me craft the code."*
+> — **Trump Wu**
+
+### 🇹🇼 中文說明 (Traditional Chinese)
 
 * **💡 核心概念與場景定義 (Concept & Requirements)**：**Trump Wu**
-  - **痛點洞察**：深入各大型產業展會（如南港農漁展）現場，解決線下交換海量名片手動 Key 檔耗時費力的真實痛點。
+  - **痛點洞察**：深入各大型產業展會現場，解決線下交換海量名片手動 Key 檔耗時費力的真實痛點。
   - **SOP 設計**：定義「A4 平片掃描多張名片批次自動切片 ➔ 自動欄位結構化 ➔ 匯入商務 Excel」之標準化作業管線。
   - **架構原則**：堅持「100% 地端離線運算、0 雲端 API Token 費用、徹底捍衛客戶商務隱私與資安」的產品核心理念。
 
-* **🤖 演算法實作與程式碼工程 (AI Implementation)**：**Antigravity (Google DeepMind)**
+* **🤖 演算法實作與工程落地 (AI Implementation)**：**Antigravity (Google DeepMind)**
   - **影像聚合切片**：實作空間鄰近聚合演算法（Spatial Proximity Clustering）與幾何約束，在不依賴微弱外框的情況下精準分離每張名片。
   - **C++ 引擎整合**：無縫介接 `PaddleOCR-json` 高效能 C++ 原生核心與 Intel MKL-DNN 硬體加速。
   - **多語言欄位抽取**：撰寫中、英、日、韓多語言正則清洗與常見 OCR 錯字修復邏輯。
   - **商務 Excel 生成**：封裝自動美化排版、自適應欄寬之 `.xlsx` 輸出與 Windows 一鍵批次檔。
+
+---
+
+### 🌐 English Overview & Story
+
+* **💡 Concept, Requirements & Vision**: **Trump Wu**
+  - **Real-World Motivation**: Solving the tedious, time-consuming pain of manually typing dozens or hundreds of business cards collected during industry exhibitions.
+  - **Workflow Design**: Defining the end-to-end pipeline from flatbed A4 scanner sheets (multiple cards per page) to automated slicing, OCR, field extraction, and clean Excel export.
+  - **Core Principles**: 100% local on-premise execution, zero cloud API token cost, and strict data privacy for sensitive corporate contacts.
+  - *Philosophy: Built through daily work challenges, contributed freely to the open-source community to empower others.*
+
+* **🤖 Algorithm Implementation & Engineering**: **Antigravity (Google DeepMind)**
+  - **Spatial Clustering**: Proximity-based bounding box clustering to isolate and crop individual business cards without requiring strong edge borders.
+  - **Native C++ Engine Integration**: High-speed offline OCR via `PaddleOCR-json` with Intel MKL-DNN hardware acceleration.
+  - **Multilingual Parsing**: Robust regex & heuristic extraction for Company, Name, Title, Mobile, Phone, Fax, Email, Address, Tax ID, and Website across CJK & English.
+  - **Business Excel Output**: Automated styled `.xlsx` workbook generation with auto-fit column widths and Windows 1-click batch launcher.
 
 ---
 
