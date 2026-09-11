@@ -2,9 +2,12 @@
 
 > **100% 地端離線運行・0 API Token 消耗・支援繁中/英/日/韓多國語言・A4 平片名片自動偵測切片與結構化歸檔至 Excel**
 
+> 💡 **人機協作專案**：由 **Trump Wu** 提出商業概念與需求構想，由 **AI (Antigravity)** 協同撰寫程式碼工程落地。
+
 [![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![OCR Engine](https://img.shields.io/badge/OCR-PaddleOCR--C%2B%2B-orange.svg)](https://github.com/PaddlePaddle/PaddleOCR)
+[![Concept](https://img.shields.io/badge/Concept-Trump%20Wu-blueviolet.svg)](#-專案緣起與協作模式-concept--development)
+[![Implementation](https://img.shields.io/badge/Code-AI%20Pair--Programming-success.svg)](#-專案緣起與協作模式-concept--development)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Offline-green.svg)](#)
 [![Token Cost](https://img.shields.io/badge/Cost-0%20Tokens-brightgreen.svg)](#)
 
@@ -83,6 +86,23 @@ BusinessCard-OCR-Excel/
 ├── LICENSE                     # MIT 開源授權
 └── README.md                   # 說明文件
 ```
+
+---
+
+## 💡 專案緣起與協作模式 (Concept & Development)
+
+> **「我是概念，你幫我寫。」—— 人機協作（Human-AI Pair Programming）的最佳實踐典範！**
+
+* **💡 核心概念與場景定義 (Concept & Requirements)**：**Trump Wu**
+  - **痛點洞察**：深入各大型產業展會（如南港農漁展）現場，解決線下交換海量名片手動 Key 檔耗時費力的真實痛點。
+  - **SOP 設計**：定義「A4 平片掃描多張名片批次自動切片 ➔ 自動欄位結構化 ➔ 匯入商務 Excel」之標準化作業管線。
+  - **架構原則**：堅持「100% 地端離線運算、0 雲端 API Token 費用、徹底捍衛客戶商務隱私與資安」的產品核心理念。
+
+* **🤖 演算法實作與程式碼工程 (AI Implementation)**：**Antigravity (Google DeepMind)**
+  - **影像聚合切片**：實作空間鄰近聚合演算法（Spatial Proximity Clustering）與幾何約束，在不依賴微弱外框的情況下精準分離每張名片。
+  - **C++ 引擎整合**：無縫介接 `PaddleOCR-json` 高效能 C++ 原生核心與 Intel MKL-DNN 硬體加速。
+  - **多語言欄位抽取**：撰寫中、英、日、韓多語言正則清洗與常見 OCR 錯字修復邏輯。
+  - **商務 Excel 生成**：封裝自動美化排版、自適應欄寬之 `.xlsx` 輸出與 Windows 一鍵批次檔。
 
 ---
 
