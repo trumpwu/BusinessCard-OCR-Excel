@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Private scan data, images & outputs (Never leak private business cards)
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+*.xlsx
+*.xls
+*.csv
+
+# Runtime & output folders
+input/
+temp/
+temp_pages/
+裁切名片圖檔/
+掃描輸入/
+data/
+output/
+
+# Binaries and bulky models (auto-downloaded by install.bat)
+*.zip
+*.7z
+*.exe
+*.dll
+Umi-OCR*/
